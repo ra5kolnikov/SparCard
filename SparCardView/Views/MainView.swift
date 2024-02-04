@@ -13,12 +13,10 @@ struct MainView: View {
     
     var body: some View {
         TabView {
-            NavigationView {
-                CardView(product: data)
-            }
-            .tabItem {
-                Label("Главная", systemImage: "leaf.circle.fill")
-            }
+            CardView(product: data)
+                .tabItem {
+                    Label("Главная", systemImage: "leaf.circle.fill")
+                }
             NavigationView {
                 Text("Каталог")
             }
